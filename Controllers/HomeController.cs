@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using workshop_asp_net_core_mvc.Models;
+using workshop_asp_net_core_mvc.Models.ViewModels;
 
 namespace workshop_asp_net_core_mvc.Controllers;
 

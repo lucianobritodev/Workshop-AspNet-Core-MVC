@@ -1,0 +1,28 @@
+@model IEnumerable<workshop_asp_net_core_mvc.Models.Department>
+
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<h2>Departments</h2>
+<table id="item" class="table">
+    <thead>
+    <tr class="">
+        <th>#</th>
+        <th>Nome</th>
+        <th>Status</th>
+        <th>Excluir</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var department in Model)
+    {
+        <tr>
+            <td>@(department._id)</td>
+            <td>@(department._name)</td>
+            <td><input type="checkbox" @(department._status ? "checked" : "") action=""/></td>
+            <td><a class="btn btn-danger" href=""><i class="bi bi-trash"></i></a></td>
+        </tr>
+    }
+    </tbody>
+</table>
